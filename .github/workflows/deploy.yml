@@ -29,16 +29,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
-      - name: Install npm dependencies
+      - name: Install dependencies
         run: npm install
-
-      - name: Install TailwindCSS standalone CLI
-        run: |
-          curl -sLO https://github.com/nicholasgasior/tailwindcss/releases/download/v4.1.8/tailwindcss-linux-x64
-          chmod +x tailwindcss-linux-x64
-          sudo mv tailwindcss-linux-x64 /usr/local/bin/tailwindcss
 
       - name: Build
         run: hugo --minify --baseURL "https://elvin-builds.github.io/portfolio/"
