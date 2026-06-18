@@ -22,7 +22,7 @@ sections:
           - "automated systems"
         type_speed: 70
         delete_speed: 40
-        pause_time: 2500
+        pause_time: 3000
       cta_buttons:
         - text: View My Work
           url: "#projects"
