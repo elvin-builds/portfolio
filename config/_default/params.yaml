@@ -12,19 +12,13 @@ hugoblox:
   # Site-level branding (for people/profiles, use the author system in content/authors/)
   # ────────────────────────────────────────────────────────────────────────────
   identity:
-    # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
-    # Legal entity for copyright notices (defaults to name if not set)
+    name: "Elvin Hagverdiyev"
     organization: ""
-    # Schema.org type for structured data
-    type: person                        # person | organization | local_business
-    # Short tagline displayed on your site
-    tagline: "Full-Stack Developer"
-    # Site meta description for search engines and social sharing
-    description: "Modern developer portfolio showcasing web development projects, technical blog posts, and open source contributions. Built with Hugo Blox."
-    # Social accounts (used for meta tags like Twitter Cards)
+    type: person
+    tagline: "Infrastructure & DevOps Engineer"
+    description: "Infrastructure & DevOps Engineer with 5+ years of experience. Skilled in Docker, Kubernetes, Terraform, Ansible, CI/CD, and Azure. Building production infrastructure across FinTech, Government, and Transportation sectors."
     social:
-      twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
+      twitter: ""         # Twitter/X handle for Twitter Cards (without @)
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME

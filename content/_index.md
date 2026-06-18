@@ -1,12 +1,10 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
 date: 2026-01-05
 type: landing
 
 sections:
-  # Developer Hero - Gradient background with name, role, social, and CTAs
   - block: dev-hero
     id: hero
     content:
@@ -18,10 +16,10 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "cloud infrastructure"
+          - "CI/CD pipelines"
+          - "containerized deployments"
+          - "automated systems"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -42,13 +40,12 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
-  # Filterable Portfolio - Alpine.js powered project filtering
+
   - block: portfolio
     id: projects
     content:
-      title: "Featured Projects"
-      subtitle: "A selection of my recent work"
+      title: "Projects"
+      subtitle: "Hands-on DevOps & Infrastructure work"
       count: 0
       filters:
         folders:
@@ -56,18 +53,15 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
+        - name: DevOps
+          tag: DevOps
+        - name: IaC
+          tag: IaC
+        - name: CI/CD
+          tag: CI/CD
+        - name: Kubernetes
+          tag: Kubernetes
       default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
     design:
       columns: 3
       background:
@@ -76,54 +70,59 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Visual Tech Stack - Icons organized by category
+
   - block: tech-stack
     id: skills
     content:
       title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
+      subtitle: "Tools I use daily to build and manage infrastructure"
       categories:
-        - name: Languages
-          items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
-            - name: Python
-              icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
-          items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
+        - name: Containers & Orchestration
           items:
             - name: Docker
               icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices
+            - name: Kubernetes
+              icon: devicon/kubernetes
+            - name: Helm
+              icon: devicon/helm
+        - name: Infrastructure as Code
+          items:
+            - name: Terraform
+              icon: devicon/terraform
+            - name: Ansible
+              icon: devicon/ansible
+        - name: CI/CD & Version Control
+          items:
             - name: GitHub Actions
               icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+            - name: Git
+              icon: devicon/git
+        - name: Cloud & Platforms
+          items:
+            - name: Azure
+              icon: devicon/azure
+            - name: AWS
+              icon: devicon/amazonwebservices
+            - name: Linux
+              icon: devicon/linux
+            - name: Nginx
+              icon: devicon/nginx
+        - name: Monitoring & Data
+          items:
+            - name: Prometheus
+              icon: devicon/prometheus
+            - name: Grafana
+              icon: devicon/grafana
+            - name: PostgreSQL
+              icon: devicon/postgresql
+        - name: Networking & Security
+          items:
+            - name: Palo Alto
+              icon: shield-check
+            - name: Cisco
+              icon: server
+            - name: VMware
+              icon: devicon/vsphere
     design:
       style: grid
       show_levels: false
@@ -133,50 +132,30 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Experience Timeline
+
   - block: resume-experience
     id: experience
     content:
       title: Experience
       date_format: Jan 2006
       items:
-        - title: Senior Software Engineer
-          company: Tech Corp
-          company_url: ''
+        - title: Infrastructure & DevOps Engineer
+          company: eTopaz / BalLine
+          company_url: 'https://etopaz.az'
           company_logo: ''
-          location: San Francisco, CA
-          date_start: '2023-01-01'
+          location: Baku, Azerbaijan
+          date_start: '2020-01-01'
           date_end: ''
           description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
-            * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
-          company: Startup Inc
-          company_url: ''
-          company_logo: ''
-          location: Remote
-          date_start: '2021-06-01'
-          date_end: '2022-12-31'
-          description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
-            * Collaborated with design team on UI/UX improvements
-            * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
-          company_url: ''
-          company_logo: ''
-          location: New York, NY
-          date_start: '2020-01-01'
-          date_end: '2021-05-31'
-          description: |2-
-            * Developed client websites using modern web technologies
-            * Maintained and updated legacy codebases
-            * Participated in code reviews and agile ceremonies
-            * Tech stack: React, WordPress, PHP, MySQL
+            * Manage production VMware vSphere infrastructure hosting 50+ VMs across multiple sites
+            * Administer Microsoft 365 and Entra ID (Azure AD) for 200+ users with hybrid AD sync
+            * Maintain Veeam Backup & Replication for VM and M365 data protection with SureBackup verification
+            * Configure and audit Palo Alto and Cisco Firepower firewalls (17 findings, 4 Critical in recent audit)
+            * Implement split-brain DNS architecture using conditional forwarders and pinpoint zones
+            * Automate server provisioning with Ansible (roles, vault, templates)
+            * Build CI/CD pipelines with GitHub Actions (lint → test → Docker build → push to GHCR)
+            * Provision Azure infrastructure with Terraform (remote backend, modules, workspaces)
+            * Deploy applications to Kubernetes using custom Helm charts with multi-environment values
     design:
       columns: '1'
       background:
@@ -185,13 +164,12 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Recent Blog Posts
+
   - block: collection
     id: blog
     content:
       title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
+      subtitle: ''
       text: ''
       filters:
         folders:
@@ -208,17 +186,16 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Contact Section
+
   - block: contact-info
     id: contact
     content:
       title: Get In Touch
-      subtitle: "Let's build something amazing together"
+      subtitle: "Open to remote DevOps & Cloud opportunities"
       text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+        I'm actively looking for remote Infrastructure / DevOps / Cloud Engineer roles.
+        If you have an opportunity or just want to connect, feel free to reach out!
+      email: elvin.hagverdiyev@gmail.com
       autolink: true
     design:
       columns: '1'
@@ -228,22 +205,19 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
+
   - block: cta-card
     content:
-      title: "Open to Opportunities"
+      title: "Open to Remote Opportunities"
       text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
+        I'm looking for **remote DevOps / Cloud Engineer** roles where I can bring
+        my 5+ years of infrastructure experience and cloud-native skills.
       button:
         text: 'Download Resume'
         url: uploads/resume.pdf
         new_tab: true
     design:
       card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
         css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
         text_color: dark
       background:
